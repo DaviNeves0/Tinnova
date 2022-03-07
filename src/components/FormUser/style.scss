@@ -1,0 +1,80 @@
+@import '../../style.global.scss';
+
+.container-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2{
+        margin:30px;
+    }
+}
+
+
+form{
+    display: flex;
+    flex-direction: column; 
+    width: 50%;
+    position: relative;
+
+    .style-input{
+       width: 100%;
+       height: 50px;
+       font-size: 1.5em;
+       outline: none;
+       border: none;
+       border-bottom: 2px solid black;
+       background-color:#efefef;   
+    }
+
+    .error{
+        width: 100%;
+        height: 50px;
+        font-size: 1.5em;
+        outline: none;
+        border: none;
+        border-bottom: 2px solid black;
+        background-color:#efefef;   
+        border-color: var(--red-100);
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button{
+        appearance: none;
+    }
+
+    label{
+       font-size: 20px;
+        font-weight: 100;
+        color: var(--grey-800);
+    }
+
+    button{
+        background-color: var(--ciano-800);
+        border-radius: 50px;
+        width: 100%;
+        color: #fff;
+        border: none;
+        font-size: 34px;
+        padding: 12px 20px;
+        text-align: center;
+        margin-top: 34px;
+        &:hover {
+          opacity: 70%;
+        }
+        cursor: pointer;
+    }
+
+    button:disabled,
+    button[disabled]{
+        background-color: #f6f6f6;
+        color: #dddcdc;
+        cursor:default
+    }
+
+    p{
+        color: var(--red-100);
+    }
+}
+
+
