@@ -21,11 +21,11 @@ const Users: React.FC = () => {
 
     useEffect(() => {
         async function buscarUsers() {
-            const res = await api.get('https://private-9d65b3-tinnova.apiary-mock.com/users')
-            salvarDados(res.data)
+            const res = await api.get('https://private-9d65b3-tinnova.apiary-mock.com/users');
+            salvarDados(res.data);
         }
-        buscarUsers()
-    }, [])
+        buscarUsers();
+    }, []);
 
     return (
         <div>

@@ -12,12 +12,12 @@ const UserProfile: React.FC<User> = ({ name, email, cpf, phone }) => {
 
     function ExcliurDados(usercpf: string) {
 
-        const atualUsers = JSON.parse(localStorage.users)
-        const removedUsers = atualUsers.filter((item: { cpf: string; }) => item.cpf !== usercpf)
-        localStorage.setItem('users', JSON.stringify(removedUsers))
-        window.location.reload()
+        const atualUsers = JSON.parse(localStorage.users);
+        const removedUsers = atualUsers.filter((item: { cpf: string; }) => item.cpf !== usercpf);
+        localStorage.setItem('users', JSON.stringify(removedUsers));
+        window.location.reload();
 
-    }
+    };
 
     return (
         <div className='container-profile'>
