@@ -37,8 +37,6 @@ const FormUser: React.FC<FormProps> = ({user, userCpf, userSet}) => {
 
   const isEnable = name && email && cpf && phone === true || !isNew;
 
-
-
   function criarUser(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setLoading(true);
