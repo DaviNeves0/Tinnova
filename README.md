@@ -2,6 +2,9 @@
 
 O Projeto gerado com create react-app [Create React App](https://github.com/facebook/create-react-app).
 
+## Para acessar a página online:
+[ACESSE O SITE](https://testecrud.netlify.app/)
+
 
 ## Como iniciar o projeto
 
