@@ -13,7 +13,7 @@ const AddUsers: React.FC = () => {
     cpf: '',
     phone: '',
   })
-
+  
   useEffect(() => {
     if (window.location.href.includes('/edit-user')) {
       const users = JSON.parse(localStorage.users)
